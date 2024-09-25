@@ -64,11 +64,9 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Verifying5754/7')
 PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '751f1d746d42985887f73f3de28
-10122b279dea0')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'publicearn.com')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '751f1d746d42985887f73f3de28
-10122b279dea0')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
