@@ -1,5 +1,4 @@
-# Don't Remove Credit @hbbotz, @Hariomsingh31u
-# Ask Doubt on telegram @hbbotz_supportch hariom singh
+# Don't Remove Credit @filmyrip @genzalok @alok_maddheshiya
 
 import re
 from os import environ
@@ -16,16 +15,16 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '29236719'))
-API_HASH = environ.get('API_HASH', '1ccf1bd0a86af974e3210a55f662c062')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6897344346:AAFep3lS8LWXlIGJkp-v17B-z-D2WjJ5HZ8")
+API_ID = int(environ.get('API_ID', '17132107'))
+API_HASH = environ.get('API_HASH', '780b6222fe53cf875c005d9dc342fcbe')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6897344346:AAHmKYPSYenhoQrTq4-ltGIYcOzFlsBsneo")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = 'time'
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/3216b77d353f4812ec654.jpg https://telegra.ph/file/4b80881be0a7d508a0c85.jpg https://telegra.ph/file/79f803e33a91f2c985a05.jpg https://telegra.ph/file/aac100d4b98836b05fbd3.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/d542066f5f4f36b55571a.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -33,16 +32,16 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 # Admins, Channels & Users
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set True Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
-REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '5')) # number of referal count
+REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '10')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6626499601').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002042987041').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1296545302').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1296545302').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '-1002001028091')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
@@ -60,7 +59,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Verifying5754/7')
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/FRverfication0/3')
 PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
@@ -72,13 +71,13 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+ps2An00KwZYwNTRl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/hbbotz')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Verifying5754/7')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ipopcorn_group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/filmyrip_official')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/FRverfication0/6')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002100182116'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+r9ArDaaCETE0OGU9')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'genzalok')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
