@@ -53,9 +53,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://spider_man:spiderman@spider.oxwprgy.mongodb.net/?retryWrites=true&w=majority&appName=Spider")
-DATABASE_NAME = environ.get('DATABASE_NAME', "spider_man")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://filmyrip:filmyrip@filmyrip.kakwa42.mongodb.net/?retryWrites=true&w=majority&appName=filmyrip")
+DATABASE_NAME = environ.get('DATABASE_NAME', "filmyrip")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'filmyrip')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
